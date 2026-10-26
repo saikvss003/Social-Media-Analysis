@@ -1,4 +1,4 @@
-# 📊 Social Media Analytics - MYSQL
+                                                    # 📊 Social Media Analytics - MYSQL
 
 Analyzing an Instagram-style relational database to uncover user behavior, engagement patterns, and influencer opportunities : using MySQL.
 
@@ -10,8 +10,7 @@ Built as part of the Data Analytics, Engineering & Science program at Newton Sch
 
 > How can we analyze user activity, engagement, and content data from a social media platform to derive actionable business insights?
 
-· The project answers 23 business questions (13 objective + 10 subjective) covering activity distribution, engagement ranking, hashtag performance, influencer  
-  identification, and campaign strategy : using only SQL queries against a 7-table relational schema.
+· The project answers 23 business questions (13 objective + 10 subjective) covering activity distribution, engagement ranking, hashtag performance, influencer identification, and campaign strategy : using only SQL queries against a 7-table relational schema.
 
 ---
 
