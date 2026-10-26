@@ -1,4 +1,4 @@
-# 📊 Social Media Analytics — SQL Project
+# 📊 Social Media Analytics — MYSQL
 
 Analyzing an Instagram-style relational database to uncover user behavior, engagement patterns, and influencer opportunities : using MySQL.
 
@@ -6,7 +6,7 @@ Built as part of the Data Analytics, Engineering & Science program at Newton Sch
 
 ---
 
-# 🧩 Problem Statement :
+# 🧩 Problem Statement :-
 
 > How can we analyze user activity, engagement, and content data from a social media platform to derive actionable business insights?
 
@@ -14,7 +14,7 @@ The project answers 23 business questions (13 objective + 10 subjective) coverin
 
 ---
 
-# 🗄️ Dataset :
+# 🗄️ Dataset :-
 
 A normalized, Instagram-style schema with 7 tables : users, photos, likes, comments, follows, tags, photo_tags.
 
@@ -32,9 +32,9 @@ Every table was checked for duplicates and missing values before analysis - none
 
 ---
 
-# 🛠️ Tools & Techniques :
+# 🛠️ Tools & Techniques :-
 
-MySQL.
+> MySQL.
 
 · CTEs (Common Table Expressions)
 · Window Functions (RANK() OVER()) 
@@ -46,7 +46,7 @@ MySQL.
 
 ---
 
-#🔍 Analysis Covered : 
+#🔍 Analysis Covered :- 
 
 > **Data Quality Checks** — duplicate and NULL validation across all 7 tables
 > **User Activity Distribution** — posts, likes, and comments per user, including fully inactive users
@@ -58,7 +58,7 @@ MySQL.
 
 ---
 
-# 💡 Key Insights :
+# 💡 Key Insights :-
 
 > **26 of 100 users (26%) have never posted** — the single largest opportunity for re-engagement campaigns.
 > **Average engagement per post is a better influencer signal than raw totals.** Eveline95 has the highest total engagement score (749), but Donald.Fritsch    
@@ -69,56 +69,17 @@ MySQL.
 
 ---
 
-# 🧮 Sample Query :
-
-Ranking users by overall engagement using a multi-step CTE and a window function:
-
-WITH n_of_likes AS (
-  SELECT photo_id, COUNT(*) AS n_of_like
-  FROM likes
-  GROUP BY photo_id
-),
-n_of_comments AS (
-  SELECT photo_id, COUNT(*) AS n_of_comment
-  FROM comments
-  GROUP BY photo_id
-),
-photo_engagements AS (
-  SELECT p.user_id, p.id,
-         COALESCE(l.n_of_like, 0) AS n_of_like,
-         COALESCE(c.n_of_comment, 0) AS n_of_comment,
-         COALESCE(l.n_of_like, 0) + COALESCE(c.n_of_comment, 0) AS engagement_score
-  FROM photos p
-  LEFT JOIN n_of_likes l ON p.id = l.photo_id
-  LEFT JOIN n_of_comments c ON p.id = c.photo_id
-),
-user_engagement AS (
-  SELECT user_id, SUM(engagement_score) AS overall_engagement
-  FROM photo_engagements
-  GROUP BY user_id
-)
-SELECT u.id, u.username, ue.overall_engagement,
-       RANK() OVER (ORDER BY ue.overall_engagement DESC) AS rank_eng
-FROM user_engagement ue
-JOIN users u ON ue.user_id = u.id
-ORDER BY ue.overall_engagement DESC;
-
-
-All 23 queries : covering data quality, engagement, followers, hashtags, and segmentation — are in [`SQL_project1.sql`](./SQL_project1.sql).
-
----
-
-## 📈 Business Recommendations
+# 📈 Business Recommendations :-
 
 | Strategy | Action |
 |---|---|
 | **Influencer Campaign** | Target the top 7 users (77 followers each, avg engagement/post > 62) for sponsored posts and ambassador deals |
 | **Re-engagement** | Push personalized incentives to the 26 zero-post users to drive their first post |
-| **Hashtag-led Ads** | Anchor food/lifestyle campaigns on `#delicious` (65.27 engagement rate) and A/B test creatives per hashtag |
+| **Hashtag-led Ads** | Anchor food/lifestyle campaigns on #delicious (65.27 engagement rate) and A/B test creatives per hashtag |
 
 ---
 
-## 📎 Project Files
+## 📎 Project Files :- 
 
 | File | Description |
 |---|---|
@@ -128,6 +89,6 @@ All 23 queries : covering data quality, engagement, followers, hashtags, and seg
 
 ---
 
-## 🙌 Reflection
+## 🙌 Reflection :-
 
-This project pushed me beyond basic querying into multi-step CTEs, window functions, and self-joins — and, more importantly, into translating raw engagement numbers into a usable business strategy (influencer targeting, segmentation, re-engagement). Built as part of my transition into data analytics, on top of 3+ years in support and product roles.
+This project pushed me beyond basic querying into multi-step CTEs, window functions, and self-joins — and, more importantly, into translating raw engagement numbers into a usable business strategy (influencer targeting, segmentation, re-engagement). Built as part of my transition into data analytics.
