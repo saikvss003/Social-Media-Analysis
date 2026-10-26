@@ -122,9 +122,9 @@ All 23 queries : covering data quality, engagement, followers, hashtags, and seg
 
 | File | Description |
 |---|---|
-| SQL Project.pptx | All 23 SQL queries (data quality, engagement, ranking, segmentation) |
-| [[SQL project1](SQL%20Project.pptx) | Presentation deck with charts and findings |
-| [`word_sql_final.docx`](./word_sql_final.docx) | Full written report — question, query, and answer for all 23 questions |
+| [SQL Project](SQL%20Project.pptx) | All 23 SQL queries (data quality, engagement, ranking, segmentation) |
+| [SQL project1](SQL%20Project.pptx) | Presentation deck with charts and findings |
+| [sql final](./word%20sql%20final.docx) | Full written report — question, query, and answer for all 23 questions |
 
 ---
 
