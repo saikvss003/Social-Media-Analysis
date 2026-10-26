@@ -1,4 +1,4 @@
-# 📊 Social Media Analytics — MYSQL
+# 📊 Social Media Analytics - MYSQL
 
 Analyzing an Instagram-style relational database to uncover user behavior, engagement patterns, and influencer opportunities : using MySQL.
 
@@ -10,13 +10,14 @@ Built as part of the Data Analytics, Engineering & Science program at Newton Sch
 
 > How can we analyze user activity, engagement, and content data from a social media platform to derive actionable business insights?
 
-The project answers 23 business questions (13 objective + 10 subjective) covering activity distribution, engagement ranking, hashtag performance, influencer identification, and campaign strategy : using only SQL queries against a 7-table relational schema.
+· The project answers 23 business questions (13 objective + 10 subjective) covering activity distribution, engagement ranking, hashtag performance, influencer  
+  identification, and campaign strategy : using only SQL queries against a 7-table relational schema.
 
 ---
 
 # 🗄️ Dataset :-
 
-A normalized, Instagram-style schema with 7 tables : users, photos, likes, comments, follows, tags, photo_tags.
+· A normalized, Instagram-style schema with 7 tables : users, photos, likes, comments, follows, tags, photo_tags.
 
 | Metric | Value |
 |---|---|
@@ -28,13 +29,13 @@ A normalized, Instagram-style schema with 7 tables : users, photos, likes, comme
 | Avg. tags per post | 1.95 |
 | Duplicate / NULL records found | 0 |
 
-Every table was checked for duplicates and missing values before analysis - none were found, confirming a clean, referentially consistent dataset.
+· Every table was checked for duplicates and missing values before analysis - none were found, confirming a clean, referentially consistent dataset.
 
 ---
 
 # 🛠️ Tools & Techniques :-
 
-> MySQL.
+· MySQL.
 
 · CTEs (Common Table Expressions)
 · Window Functions (RANK() OVER()) 
@@ -48,24 +49,24 @@ Every table was checked for duplicates and missing values before analysis - none
 
 #🔍 Analysis Covered :- 
 
-> **Data Quality Checks** — duplicate and NULL validation across all 7 tables
-> **User Activity Distribution** — posts, likes, and comments per user, including fully inactive users
-> **Engagement Ranking** — total and average engagement score per user via CTEs + RANK() OVER()
-> **Follower/Following Analysis** — top users by followers, plus mutual-follow detection via self-join
-> **Tag & Hashtag Analytics** — average tags per post, highest-engagement hashtags
-> **User Segmentation** — Power Users, Influencer Tier, Casual Users, Inactive Users
-> **Strategic Recommendations** — influencer outreach, re-engagement campaigns, hashtag-led ad strategy
+· **Data Quality Checks** - duplicate and NULL validation across all 7 tables
+· **User Activity Distribution** - posts, likes, and comments per user, including fully inactive users
+· **Engagement Ranking** - total and average engagement score per user via CTEs + RANK() OVER()
+· **Follower/Following Analysis** - top users by followers, plus mutual-follow detection via self-join
+· **Tag & Hashtag Analytics** - average tags per post, highest-engagement hashtags
+· **User Segmentation** - Power Users, Influencer Tier, Casual Users, Inactive Users
+· **Strategic Recommendations** - influencer outreach, re-engagement campaigns, hashtag-led ad strategy
 
 ---
 
 # 💡 Key Insights :-
 
-> **26 of 100 users (26%) have never posted** — the single largest opportunity for re-engagement campaigns.
-> **Average engagement per post is a better influencer signal than raw totals.** Eveline95 has the highest total engagement score (749), but Donald.Fritsch    
+· **26 of 100 users (26%) have never posted** - the single largest opportunity for re-engagement campaigns.
+· **Average engagement per post is a better influencer signal than raw totals.** Eveline95 has the highest total engagement score (749), but Donald.Fritsch    
     converts best on a per-post basis (65.33 avg/post).
-> **A clear influencer tier exists**: the top 7 users each hold 77 followers — a highly competitive, identifiable segment for brand partnerships.
-> **#delicious is the top-performing hashtag**, with a 65.27 engagement rate across 15 posts — food/lifestyle content drives the most interaction.
-> **One power user posted 257 comments** — 13× the platform average — while 23 users gave zero likes at all, showing a wide engagement gap across the user base.
+· **A clear influencer tier exists**: the top 7 users each hold 77 followers - a highly competitive, identifiable segment for brand partnerships.
+· **#delicious is the top-performing hashtag**, with a 65.27 engagement rate across 15 posts - food/lifestyle content drives the most interaction.
+· **One power user posted 257 comments**  13× the platform average - while 23 users gave zero likes at all, showing a wide engagement gap across the user base.
 
 ---
 
@@ -85,10 +86,10 @@ Every table was checked for duplicates and missing values before analysis - none
 |---|---|
 | [SQL Project](SQL%20Project.pptx) | All 23 SQL queries (data quality, engagement, ranking, segmentation) |
 | [SQL project1](SQL%20Project.pptx) | Presentation deck with charts and findings |
-| [sql final](./word%20sql%20final.docx) | Full written report — question, query, and answer for all 23 questions |
+| [sql final](./word%20sql%20final.docx) | Full written report - question, query, and answer for all 23 questions |
 
 ---
 
 ## 🙌 Reflection :-
 
-This project pushed me beyond basic querying into multi-step CTEs, window functions, and self-joins — and, more importantly, into translating raw engagement numbers into a usable business strategy (influencer targeting, segmentation, re-engagement). Built as part of my transition into data analytics.
+This project pushed me beyond basic querying into multi-step CTEs, window functions, and self-joins and, more importantly, into translating raw engagement numbers into a usable business strategy (influencer targeting, segmentation, re-engagement). Built as part of my transition into data analytics.
