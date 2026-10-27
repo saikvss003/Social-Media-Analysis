@@ -89,12 +89,12 @@ Built as part of the Data Analytics, Engineering & Science program at Newton Sch
 
 | File | Description |
 |---|---|
-| [SQL Project](SQL%20Project.pptx) | All 23 SQL queries (data quality, engagement, ranking, segmentation) |
-| [SQL Project Deck](./SQL_Project.pptx) | Presentation deck with charts and findings |
-| [SQL Final Report](./word_sql_final.docx) | Full written report - question, query, and answer for all 23 questions |
+| [SQL project1](SQL%20project1.sql) | All 23 SQL queries (data quality, engagement, ranking, segmentation) |
+| [SQL Project](SQL%20Project.pptx) | Presentation deck with charts and findings |
+| [word sql final](word%20sql%20final.docx) | Full written report - question, query, and answer for all 23 questions |
 
 ---
 
 # 🙌 Reflection :-
 
-This project pushed me beyond basic querying into multi-step CTEs, window functions, and self-joins - and, more importantly, into translating raw engagement numbers into a usable business strategy (influencer targeting, segmentation, re-engagement). Built as part of my transition into data analytics, on top of 3+ years in support and product roles.
+This project pushed me beyond basic querying into multi-step CTEs, window functions, and self-joins and, more importantly, into translating raw engagement numbers into a usable business strategy (influencer targeting, segmentation, re-engagement). Built as part of my transition into data analytics.
