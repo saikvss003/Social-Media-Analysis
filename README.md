@@ -46,7 +46,7 @@ Built as part of the Data Analytics, Engineering & Science program at Newton Sch
 
 ---
 
-#🔍 **Analysis Covered** :- 
+# 🔍 Analysis Covered :- 
 
 · **Data Quality Checks** - duplicate and NULL validation across all 7 tables
 · **User Activity Distribution** - posts, likes, and comments per user, including fully inactive users
