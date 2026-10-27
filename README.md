@@ -1,4 +1,4 @@
-                                                    # 📊 Social Media Analytics - MYSQL
+# 📊 Social Media Analytics - MYSQL
 
 Analyzing an Instagram-style relational database to uncover user behavior, engagement patterns, and influencer opportunities : using MySQL.
 
