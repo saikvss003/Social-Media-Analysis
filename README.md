@@ -89,7 +89,7 @@ Built as part of the Data Analytics, Engineering & Science program at Newton Sch
 
 | File | Description |
 |---|---|
-| [SQL Project](./SQL_project1.sql) | All 23 SQL queries (data quality, engagement, ranking, segmentation) |
+| [SQL Project](SQL%20Project.pptx) | All 23 SQL queries (data quality, engagement, ranking, segmentation) |
 | [SQL Project Deck](./SQL_Project.pptx) | Presentation deck with charts and findings |
 | [SQL Final Report](./word_sql_final.docx) | Full written report - question, query, and answer for all 23 questions |
 
