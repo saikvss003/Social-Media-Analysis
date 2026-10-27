@@ -97,4 +97,4 @@ Built as part of the Data Analytics, Engineering & Science program at Newton Sch
 
 # 🙌 Reflection :-
 
-This project pushed me beyond basic querying into multi-step CTEs, window functions, and self-joins and, more importantly, into translating raw engagement numbers into a usable business strategy (influencer targeting, segmentation, re-engagement). Built as part of my transition into data analytics.
+This project pushed me beyond basic querying into multi-step CTEs, window functions, and self-joins and, more importantly, into translating raw engagement numbers into a usable business strategy (influencer targeting, segmentation, re-engagement).
